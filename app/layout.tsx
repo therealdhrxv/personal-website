@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Newsreader, Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { SITE_URL, profile, sameAs } from "./data";
 import "./globals.css";
 
@@ -82,6 +83,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         {children}
+        <Analytics />
       </body>
     </html>
   );
