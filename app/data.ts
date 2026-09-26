@@ -1,6 +1,6 @@
 // Everything on the site lives here.
 
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://dhruvpankajpatel.vercel.app").replace(/\/$/, "");
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://dhruv.fit").replace(/\/$/, "");
 
 export const profile = {
   name: "Dhruv Pankaj Patel",
